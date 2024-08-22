@@ -1,10 +1,20 @@
-// // // 1) Comparar edad: 
-// let edad = prompt("Ingrese su edad")
-// if(edad >= 18){
-//     console.log("Eres mayor de edad.")
-// }else{
-//     console.log("Eres menor de edad")
-// }
+//16 Menu de ejercicios. 
+let opcion = prompt("Ingrese el numero del punto a evaluar del 1 al 15")
+switch (opcion) {
+    case "1":
+        let edad = prompt("Ingrese su edad")
+        if (edad >= 18) {
+            console.log("Eres mayor de edad.")
+        } else {
+            console.log("Eres menor de edad")
+        }
+        break;
+
+    default:
+        break;
+}
+// 1) Comparar edad: 
+
 
 // // //2 Numero positivo o negativo
 // let numero = prompt("Ingrese un número")
@@ -121,26 +131,28 @@
 
 //11 Calculo del precio final
 // let precioBaseProducto = prompt("Ingrese el precio base del producto")
-// let descuentoBase = (precioBaseProducto/100)
-// let totalDescuento = precioBaseProducto - descuentoBase
+// let porciento = (precioBaseProducto/100)
+// let totalAPagar
 // if(precioBaseProducto > 500){
-//     descuentoBase = (precioBaseProducto/100) * 15
-//     console.log("Precio final con descuento: " + totalDescuento)
-// }else if(precioBaseProducto >= 300 && precioBaseProducto <= 500){
-//     descuentoBase = (precioBaseProducto/100) * 10
-//     console.log("Precio final con descuento: " + totalDescuento)
-// }else if(precioBaseProducto < 300){
-//     descuentoBase = (precioBaseProducto/100) * 5
-//     console.log("Precio final con descuento: " + totalDescuento)
-// }else[
-//     console.log("Gracias por su compra")
-// ]
+//     totalAPagar = precioBaseProducto - (porciento * 15)
+//     console.log("El valor total del producto con descuento es: " + totalAPagar )
+// }else if(precioBaseProducto > 300 || precioBaseProducto < 500){
+//     totalAPagar = precioBaseProducto - (porciento * 10)
+//     console.log("El valor total del producto con descuento es: " + totalAPagar )
+// }else if(precioBaseProducto <= 300 || precioBaseProducto > 0){
+//     totalAPagar = precioBaseProducto - (porciento * 5)
+//     console.log("El valor total del producto con descuento es: " + totalAPagar )
+// }
 
-//12 Verifica el año bisiesto
+//12 Verifica el año 
+//Ejercicio incompleto
 
 // let año = prompt("Ingrese un año en numeros")
-// if(año % 4){
-
+// let division = año / 4
+// if(division == año %2 ){
+//     console.log("El año es bisiesto")
+// }else{
+//     console.log("El año no es bisiesto")
 // }
 
 // //13 Autenticacion de usuario
@@ -162,16 +174,16 @@
 //     console.log("Buenas noches")
 // }
 
-//15 Clasificación de masa corporal
+// 15 Clasificación de masa corporal
 // let peso = prompt("Ingrese su peso")
 // let altura = prompt("Ingrese su altura")
-// let imc = (peso / altura) * 2
+// let imc = peso / (altura * 2)
 // if(imc <= 18.5){
-//     console.log("Bajo peso")
-// }else if(imc >= 18.5 && imc <= 24.9){
+//     console.log(imc)
+// }else if(imc > 18.5 && imc <= 24.9){
 //     console.log("Peso normal")
-// }else if(imc >= 25 && imc <= 29.9){
+// }else if(imc > 24.9 && imc <= 29.9){
 //     console.log("sobre peso")
 // }else{
-
+    
 // }
