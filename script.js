@@ -158,7 +158,16 @@ if(division == año %2 ){
     console.log("El año no es bisiesto")
 }
 break;
-
+    case "13":
+        //13 Autenticacion de usuario
+let usuario = prompt("Ingrese su usuario")
+let contraseña = prompt("Ingrese su contraseña")
+if(usuario == "admin" && contraseña == "1234"){
+    console.log("Acceso concedido")
+}else{
+    console.log("Acceso denegado")
+}
+break;
 
     default:
         break;
@@ -183,14 +192,6 @@ break;
 
 
 
-// //13 Autenticacion de usuario
-// let usuario = prompt("Ingrese su usuario")
-// let contraseña = prompt("Ingrese su contraseña")
-// if(usuario == "admin" && contraseña == "1234"){
-//     console.log("Acceso concedido")
-// }else{
-//     console.log("Acceso denegado")
-// }
 
 //14 Determinar horario del día
 // let hora = prompt("ingrese la hora. (Solo el numero de 0 a 23)")
