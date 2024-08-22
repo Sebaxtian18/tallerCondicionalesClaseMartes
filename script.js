@@ -103,7 +103,32 @@ switch(menu){
 }
 break;
     case "9": 
-
+        //9 Tipo de triangulo
+//Este me puso a pensar bastante en como darle la respuesta al triangulo isoceles
+let ladoA = prompt("Ingrese el lado A del triangulo")
+let ladoB = prompt("Ingrese el lado B del triangulo")
+let ladoC = prompt("Ingrese el lado C del triangulo")
+if(ladoA == ladoB && ladoA == ladoC){
+    console.log("Es un triangulo equilatero")
+}if(ladoA == ladoB && ladoB != ladoC || ladoA == ladoC && ladoB != ladoC){
+    console.log("Es un triangulo isosceles")
+}if(ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
+    console.log("Es un triangulo escaleno")
+}else{
+    console.log()
+}
+10 Adivinar un numero
+let numeroEscogido = 4
+let adivinaElNumero = prompt("Adivina un número del 1 al 10")
+if(adivinaElNumero > 10){
+    console.log("Número invalido")
+}else if(adivinaElNumero == numeroEscogido){
+    console.log("Has acertado")
+}else{
+    console.log("Intenta de nuevo")
+}
+break;
+    
     default:
         break;
 }
@@ -124,30 +149,6 @@ break;
 
 
 
-//9 Tipo de triangulo
-// Este me puso a pensar bastante en como darle la respuesta al triangulo isoceles
-// let ladoA = prompt("Ingrese el lado A del triangulo")
-// let ladoB = prompt("Ingrese el lado B del triangulo")
-// let ladoC = prompt("Ingrese el lado C del triangulo")
-// if(ladoA == ladoB && ladoA == ladoC){
-//     console.log("Es un triangulo equilatero")
-// }if(ladoA == ladoB && ladoB != ladoC || ladoA == ladoC && ladoB != ladoC){
-//     console.log("Es un triangulo isosceles")
-// }if(ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
-//     console.log("Es un triangulo escaleno")
-// }else{
-//     console.log()
-// }
-// 10 Adivinar un numero
-// let numeroEscogido = 4
-// let adivinaElNumero = prompt("Adivina un número del 1 al 10")
-// if(adivinaElNumero > 10){
-//     console.log("Número invalido")
-// }else if(adivinaElNumero == numeroEscogido){
-//     console.log("Has acertado")
-// }else{
-//     console.log("Intenta de nuevo")
-// }
 
 //11 Calculo del precio final
 // let precioBaseProducto = prompt("Ingrese el precio base del producto")
