@@ -117,7 +117,9 @@ if(ladoA == ladoB && ladoA == ladoC){
 }else{
     console.log()
 }
-10 Adivinar un numero
+break;
+    case "10":
+        //10 Adivinar un numero
 let numeroEscogido = 4
 let adivinaElNumero = prompt("Adivina un número del 1 al 10")
 if(adivinaElNumero > 10){
@@ -128,7 +130,7 @@ if(adivinaElNumero > 10){
     console.log("Intenta de nuevo")
 }
 break;
-    
+
     default:
         break;
 }
