@@ -9,7 +9,13 @@ switch (opcion) {
             console.log("Eres menor de edad")
         }
         break;
-
+    case "2":
+        let numero = prompt("Ingrese un número")
+if(numero >= 0){
+    console.log("El número es positivo")
+}else{
+    console.log("El número es negativo")
+}
     default:
         break;
 }
@@ -17,12 +23,6 @@ switch (opcion) {
 
 
 // // //2 Numero positivo o negativo
-// let numero = prompt("Ingrese un número")
-// if(numero >= 0){
-//     console.log("El número es positivo")
-// }else{
-//     console.log("El número es negativo")
-// }
 
 // // //3 Número par o impar
 // if(numero %2 == 0){
