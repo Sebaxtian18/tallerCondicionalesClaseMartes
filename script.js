@@ -130,6 +130,22 @@ if(adivinaElNumero > 10){
     console.log("Intenta de nuevo")
 }
 break;
+    case "11":
+        //11 Calculo del precio final
+let precioBaseProducto = prompt("Ingrese el precio base del producto")
+let porciento = (precioBaseProducto/100)
+let totalAPagar
+if(precioBaseProducto > 500){
+    totalAPagar = precioBaseProducto - (porciento * 15)
+    console.log("El valor total del producto con descuento es: " + totalAPagar )
+}else if(precioBaseProducto > 300 || precioBaseProducto < 500){
+    totalAPagar = precioBaseProducto - (porciento * 10)
+    console.log("El valor total del producto con descuento es: " + totalAPagar )
+}else if(precioBaseProducto <= 300 || precioBaseProducto > 0){
+    totalAPagar = precioBaseProducto - (porciento * 5)
+    console.log("El valor total del producto con descuento es: " + totalAPagar )
+}
+break;
 
     default:
         break;
@@ -152,20 +168,6 @@ break;
 
 
 
-//11 Calculo del precio final
-// let precioBaseProducto = prompt("Ingrese el precio base del producto")
-// let porciento = (precioBaseProducto/100)
-// let totalAPagar
-// if(precioBaseProducto > 500){
-//     totalAPagar = precioBaseProducto - (porciento * 15)
-//     console.log("El valor total del producto con descuento es: " + totalAPagar )
-// }else if(precioBaseProducto > 300 || precioBaseProducto < 500){
-//     totalAPagar = precioBaseProducto - (porciento * 10)
-//     console.log("El valor total del producto con descuento es: " + totalAPagar )
-// }else if(precioBaseProducto <= 300 || precioBaseProducto > 0){
-//     totalAPagar = precioBaseProducto - (porciento * 5)
-//     console.log("El valor total del producto con descuento es: " + totalAPagar )
-// }
 
 //12 Verifica el año 
 //Ejercicio incompleto
