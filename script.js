@@ -1,5 +1,5 @@
 //16 Menu de ejercicios. 
-let opcion = prompt("Ingrese el numero del punto a evaluar del 1 al 15")
+let opcion = prompt("Ingrese el numero del punto a evaluar del 1 al 15: 1- Comparar edad, 2- Número positivo o negativo, 3- Número par o impar, 4- Calculo de descuento, 5- Comparar dos números, 6- Clasificacion por edad, 7- Clasificacion de notas, 8- Eleccion de menú, 9- Tipo de triangulo, 10- Adivinar el número, 11- Calculo del precio final, 12- Verificar el año bisiesto, 13- Autenticacion de usuario, 14- Determinar horario del día, 15- Clasificacion de masa corporal.")
 switch (opcion) {
     // 1) Comparar edad:
     case "1":
