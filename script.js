@@ -146,6 +146,19 @@ if(precioBaseProducto > 500){
     console.log("El valor total del producto con descuento es: " + totalAPagar )
 }
 break;
+    case "12":
+        //12 Verifica el año 
+//Ejercicio incompleto
+
+let año = prompt("Ingrese un año en numeros")
+let division = año / 4
+if(division == año %2 ){
+    console.log("El año es bisiesto")
+}else{
+    console.log("El año no es bisiesto")
+}
+break;
+
 
     default:
         break;
@@ -169,16 +182,6 @@ break;
 
 
 
-//12 Verifica el año 
-//Ejercicio incompleto
-
-// let año = prompt("Ingrese un año en numeros")
-// let division = año / 4
-// if(division == año %2 ){
-//     console.log("El año es bisiesto")
-// }else{
-//     console.log("El año no es bisiesto")
-// }
 
 // //13 Autenticacion de usuario
 // let usuario = prompt("Ingrese su usuario")
