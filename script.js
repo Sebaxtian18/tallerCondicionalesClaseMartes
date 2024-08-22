@@ -36,6 +36,20 @@ if(totalCompra > 100){
     console.log("Total a pagar: "+ totalCompra)
 }
         break;
+    case "5":
+        //5 Compara dos numeros
+let numero2 = prompt("Ingrese el primer número a comparar")
+let numero3 = prompt("Ingrese el segundo número a comparar")
+if(numero2 == numero3){
+    console.log("Ambos números son el mismo")
+}else if(numero2 > numero3){
+    console.log("El primer número es mayor que el segundo")
+}else if(numero2 < numero3){
+    console.log("El primer número es menor que el segundo")
+}else{
+    ("Operación invalida")
+}
+break;
     default:
         break;
 }
@@ -49,18 +63,7 @@ if(totalCompra > 100){
 
 
 
-// //5 Compara dos numeros
-// let numero2 = prompt("Ingrese el primer número a comparar")
-// let numero3 = prompt("Ingrese el segundo número a comparar")
-// if(numero2 == numero3){
-//     console.log("Ambos números son el mismo")
-// }else if(numero2 > numero3){
-//     console.log("El primer número es mayor que el segundo")
-// }else if(numero2 < numero3){
-//     console.log("El primer número es menor que el segundo")
-// }else{
-//     ("Operación invalida")
-// }
+
 
 //6 Clasificación por edad
 // let edadClasificacion = prompt("Ingrese su edad")
