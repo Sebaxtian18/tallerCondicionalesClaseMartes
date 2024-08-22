@@ -16,6 +16,14 @@ if(numero >= 0){
 }else{
     console.log("El número es negativo")
 }
+    break;
+    case "3":
+        if(numero %2 == 0){
+            console.log("El número es par")
+        }else{
+            console.log("El número es impar")
+        }
+        break;
     default:
         break;
 }
@@ -25,11 +33,7 @@ if(numero >= 0){
 // // //2 Numero positivo o negativo
 
 // // //3 Número par o impar
-// if(numero %2 == 0){
-//     console.log("El número es par")
-// }else{
-//     console.log("El número es impar")
-// }
+
 
 // //4 Calculo de descuento
 // let totalCompra = prompt("Ingrese el total de la compra")
