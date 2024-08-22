@@ -50,9 +50,64 @@ if(numero2 == numero3){
     ("Operación invalida")
 }
 break;
+case "6":
+    //6 Clasificación por edad
+let edadClasificacion = prompt("Ingrese su edad")
+if(edadClasificacion < 12){
+console.log("Eres un niño")
+}else if(edadClasificacion >= 12 && edadClasificacion <= 17){
+console.log("Eres un adolescente")
+}else if(edadClasificacion >= 18 && edadClasificacion <= 64){
+console.log("Eres un adulto")
+}else if(edadClasificacion >= 12 && edadClasificacion <= 17){
+console.log("Eres un adolescente")
+}else if(edadClasificacion >= 65 && edadClasificacion <=100){
+console.log("Eres un adulto mayor")
+}else{
+console.log("Datos invalidos")
+}
+break;
+    case "7":
+        //7 Clasificación de notas
+let nota = prompt("Ingrese una nota entre 0 y 100")
+if(nota > 100 || nota < 0 ){
+    console.log("Datos invalidos")
+}else if(nota >= 90){
+    console.log("Excelente")
+}else if(nota >= 70){
+    console.log("Bueno")
+}else if(nota >= 50){
+    console.log("Eres Regular")
+}else if(nota < 50){
+    console.log("Insuficiente")
+}else{
+    console.log("Datos invalidos intente de nuevo")
+}
+break;
+    case "8":
+    //8 Elección de menú
+let menu = prompt("Este es el menú presione el numero de lo que desea ordenar. 1- Pizza, 2- Hamburguesa, 3- Tacos.")
+switch(menu){
+    case "1":
+        console.log("Has escogido Pizza")
+        break
+    case "2":
+        console.log("Has escogido Hamburguesa")    
+        break    
+    case "3":
+        console.log("Has escogido Tacos")    
+        break    
+    default:
+        console.log("Opcion no valida")
+        break;    
+}
+break;
+    case "9": 
+
     default:
         break;
 }
+  
 // 1) Comparar edad: 
 
 
@@ -65,54 +120,9 @@ break;
 
 
 
-//6 Clasificación por edad
-// let edadClasificacion = prompt("Ingrese su edad")
-// if(edadClasificacion < 12){
-//     console.log("Eres un niño")
-// }else if(edadClasificacion >= 12 && edadClasificacion <= 17){
-//     console.log("Eres un adolescente")
-// }else if(edadClasificacion >= 18 && edadClasificacion <= 64){
-//     console.log("Eres un adulto")
-// }else if(edadClasificacion >= 12 && edadClasificacion <= 17){
-//     console.log("Eres un adolescente")
-// }else if(edadClasificacion >= 65 && edadClasificacion <=100){
-//     console.log("Eres un adulto mayor")
-// }else{
-//     console.log("Datos invalidos")
-// }
 
-//7 Clasificación de notas
-// let nota = prompt("Ingrese una nota entre 0 y 100")
-// if(nota > 100 || nota < 0 ){
-//     console.log("Datos invalidos")
-// }else if(nota >= 90){
-//     console.log("Excelente")
-// }else if(nota >= 70){
-//     console.log("Bueno")
-// }else if(nota >= 50){
-//     console.log("Eres Regular")
-// }else if(nota < 50){
-//     console.log("Insuficiente")
-// }else{
-//     console.log("Datos invalidos intente de nuevo")
-// }
 
-//8 Elección de menú
-// let menu = prompt("Este es el menú presione el numero de lo que desea ordenar. 1- Pizza, 2- Hamburguesa, 3- Tacos.")
-// switch(menu){
-//     case "1":
-//         console.log("Has escogido Pizza")
-//         break
-//     case "2":
-//         console.log("Has escogido Hamburguesa")    
-//         break    
-//     case "3":
-//         console.log("Has escogido Tacos")    
-//         break    
-//     default:
-//         console.log("Opcion no valida")
-//         break    
-// }
+
 
 //9 Tipo de triangulo
 // Este me puso a pensar bastante en como darle la respuesta al triangulo isoceles
