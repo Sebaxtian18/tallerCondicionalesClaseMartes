@@ -24,6 +24,18 @@ if(numero >= 0){
             console.log("El número es impar")
         }
         break;
+    case "4":
+        //4 Calculo de descuento
+let totalCompra = prompt("Ingrese el total de la compra")
+let descuento = (totalCompra / 100) * 10
+let totalConDescuento
+if(totalCompra > 100){
+    totalConDescuento = totalCompra - descuento
+    console.log("Total con descuento es: "+ totalConDescuento)
+}else{
+    console.log("Total a pagar: "+ totalCompra)
+}
+        break;
     default:
         break;
 }
@@ -35,16 +47,7 @@ if(numero >= 0){
 // // //3 Número par o impar
 
 
-// //4 Calculo de descuento
-// let totalCompra = prompt("Ingrese el total de la compra")
-// let descuento = (totalCompra / 100) * 10
-// let totalConDescuento
-// if(totalCompra > 100){
-//     totalConDescuento = totalCompra - descuento
-//     console.log("Total con descuento es: "+ totalConDescuento)
-// }else{
-//     console.log("Total a pagar: "+ totalCompra)
-// }
+
 
 // //5 Compara dos numeros
 // let numero2 = prompt("Ingrese el primer número a comparar")
