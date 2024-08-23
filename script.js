@@ -1,5 +1,5 @@
 //16 Menu de ejercicios. 
-let opcion = prompt("Ingrese el numero del punto a evaluar del 1 al 15: 1- Comparar edad, 2- Número positivo o negativo, 3- Número par o impar, 4- Calculo de descuento, 5- Comparar dos números, 6- Clasificacion por edad, 7- Clasificacion de notas, 8- Eleccion de menú, 9- Tipo de triangulo, 10- Adivinar el número, 11- Calculo del precio final, 12- Verificar el año bisiesto, 13- Autenticacion de usuario, 14- Determinar horario del día, 15- Clasificacion de masa corporal.")
+let opcion = prompt("Ingrese el numero del punto a evaluar del 1 al 15:\n 1- Comparar edad, \n 2- Número positivo o negativo, \n 3- Número par o impar, \n 4- Calculo de descuento, \n 5- Comparar dos números, \n 6- Clasificacion por edad, \n 7- Clasificacion de notas, \n 8- Eleccion de menú, \n 9- Tipo de triangulo, \n 10- Adivinar el número, \n 11- Calculo del precio final, \n 12- Verificar el año bisiesto, \n 13- Autenticacion de usuario, \n 14- Determinar horario del día, \n 15- Clasificacion de masa corporal.")
 switch (opcion) {
     // 1) Comparar edad:
     case "1":
@@ -47,10 +47,8 @@ switch (opcion) {
             console.log("Ambos números son el mismo")
         } else if (numero2 > numero3) {
             console.log("El primer número es mayor que el segundo")
-        } else if (numero2 < numero3) {
+        }else {
             console.log("El primer número es menor que el segundo")
-        } else {
-            ("Operación invalida")
         }
         break;
     case "6":
@@ -186,15 +184,15 @@ switch (opcion) {
         //15 Clasificación de masa corporal
         let peso = prompt("Ingrese su peso")
         let altura = prompt("Ingrese su altura")
-        let imc = peso / (altura * 2)
-        if (imc <= 18.5) {
-            console.log(imc)
-        } else if (imc > 18.5 && imc <= 24.9) {
+        let imc = peso / (altura * altura)
+        if (imc < 18.5) {
+            console.log("Bajo peso")
+        } else if (imc >= 18.5 && imc <= 24.9) {
             console.log("Peso normal")
-        } else if (imc > 24.9 && imc <= 29.9) {
+        } else if (imc >= 25.0 && imc <= 29.9) {
             console.log("sobre peso")
         } else {
-
+            console.log("Obesidad")
         }
         break;
 
